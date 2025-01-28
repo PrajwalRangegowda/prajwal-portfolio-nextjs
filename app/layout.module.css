@@ -1,0 +1,98 @@
+.layout{
+    display: flex;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header" "main" "footer";
+
+    
+}
+
+.sitetitle{
+    font-family:'Anta';
+    font-size: 1.5rem;
+}
+
+.siteLogo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    font-family: Anta;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+    position: fixed;
+    top: 0; /* Stick to the top */
+    left: 0; /* Stick to the left */
+    width: 100%; /* Span the full width */
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+
+@media screen and (max-width: 568px){
+    .header{
+        display: block;
+    }
+    .nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .siteLogo{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .sitetitle{
+        
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 328px){
+    .sitetitle{
+        font-family:'Anta';
+        font-size: 1rem;
+        margin: 10px;
+    }
+    
+}
+
+.logoLight {
+    display: none;
+  }
+  
+  .logoDark {
+    display: block  ;
+  }
+  
+  /* Dark mode */
+  @media (prefers-color-scheme: dark) {
+    .logoLight {
+      display: block;
+    }
+  
+    .logoDark {
+      display: none;
+    }
+
+    .header{
+        background-color: rgb(4, 4, 4);
+    }
+  }

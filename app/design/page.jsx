@@ -5,10 +5,9 @@ import Head from "next/head";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Head>
+    <Head>
         <link rel="icon" href="/favicon.ico" />
-        
-      </Head>
+    </Head>
       <main className={styles.main}>
         <Image
           className={styles.logo}
