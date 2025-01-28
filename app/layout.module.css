@@ -1,13 +1,3 @@
-.layout{
-    display: flex;
-    
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "header" "main" "footer";
-
-    
-}
-
 .sitetitle{
     font-family:'Anta';
     font-size: 1.5rem;
@@ -26,6 +16,11 @@
     gap: 16px;
     list-style: none;
     font-family: Anta;
+}
+
+.nav ul li:hover{
+    color: #534f4f;
+    transition: color 200ms ease-in-out;
 }
 
 .header {
