@@ -1,24 +1,24 @@
 .sitetitle {
     font-family: 'Anta';
     font-size: 1.5rem;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.2s;
 }
 
 .sitetitleScrolled {
     font-family: 'Anta';
     font-size: 1.2rem;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.2s;
 }
 
 .siteLogo {
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: width 0.3s ease-in-out, height 0.5s ease-in-out;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
 }
 
 .logo {
-    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
 }
 
 .nav ul {
@@ -49,7 +49,7 @@
     height: auto;
     background-color: rgba(4, 4, 4, 0.6); /* Dark background */
     z-index: 1000; /* Ensure it stays above other content */
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.2s;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -69,7 +69,7 @@
     height: auto;
     background-color: rgba(4, 4, 4, 0.6); /* Dark background */
     z-index: 1000; /* Ensure it stays above other content */
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.2s;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -109,7 +109,7 @@
         font-family: 'Anta';
         font-size: 1rem;
         margin: 10px;
-        transition: ease-in-out 0.5s;
+        transition: ease-in-out 0.2s;
     }
 
     .nav {

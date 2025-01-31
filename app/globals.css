@@ -100,23 +100,23 @@ a {
 }
 
 
-body {
+/* body {
   background-image: url('/noise.svg');
   background-repeat: repeat;
   background-blend-mode:soft-light;
   background-attachment: fixed;
-  -webkit-background-blend-mode: soft-light; /* iOS Safari fix */
+  -webkit-background-blend-mode: soft-light; 
   animation: movebackground 300s linear infinite;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-   /* Optional: make it cover the whole viewport */
-}
+   
+} */
 
 
 
 
-@keyframes movebackground{
+/* @keyframes movebackground{
   0%{
     background-position: 0% 50%;
     
@@ -127,4 +127,4 @@ body {
   100%{
     background-position: 0% 50%;
   }
-}
+} */
