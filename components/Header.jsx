@@ -17,7 +17,7 @@ export default function Header() {
       } else {
         setScrolled(false);
         setLogoHeight(35);
-      }
+      }praj
     };
 
     window.addEventListener("scroll", handleScroll);
