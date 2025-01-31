@@ -1,0 +1,143 @@
+.sitetitle {
+    font-family: 'Anta';
+    font-size: 1.5rem;
+    transition: ease-in-out 0.5s;
+}
+
+.sitetitleScrolled {
+    font-family: 'Anta';
+    font-size: 1.2rem;
+    transition: ease-in-out 0.5s;
+}
+
+.siteLogo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: width 0.3s ease-in-out, height 0.5s ease-in-out;
+}
+
+.logo {
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    font-family: Anta;
+}
+
+.nav ul li:hover {
+    color: #534f4f;
+    transition: color 200ms ease-in-out;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+    position: fixed;
+    top: 0; /* Stick to the top */
+    left: 0; /* Stick to the left */
+    width: 100%; /* Span the full width */
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    height: auto;
+    background-color: rgba(4, 4, 4, 0.6); /* Dark background */
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: ease-in-out 0.5s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.scrolled {
+    display: flex;
+    flex: 1;
+    position: fixed;
+    top: 0; /* Stick to the top */
+    left: 0; /* Stick to the left */
+    width: 100%; /* Span the full width */
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 24px;
+    padding-top: 10px;
+    height: auto;
+    background-color: rgba(4, 4, 4, 0.6); /* Dark background */
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: ease-in-out 0.5s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width: 568px) {
+    .header {
+        display: block;
+    }
+
+    .scrolled {
+        display: block;
+    }
+
+    .nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .siteLogo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sitetitle {
+        margin: 10px;
+    }
+
+    .nav {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .sitetitle {
+        font-family: 'Anta';
+        font-size: 1rem;
+        margin: 10px;
+        transition: ease-in-out 0.5s;
+    }
+
+    .nav {
+        margin-top: 10px;
+    }
+}
+
+/* Force Dark Mode (no system theme dependence) */
+.logoLight {
+    display: block;
+}
+
+.logoDark {
+    display: none;
+}
+
+/* Dark Mode Styles */
+
+
+.header,
+.scrolled {
+    background-color: rgba(4, 4, 4, 0.6); /* Dark background for header */
+}
+
+.nav ul li:hover {
+    color: #bbb; /* Lighter text on hover */
+}
+
+.siteLogo {
+    color: white; /* Ensure logos and site names are visible */
+}

@@ -1,14 +1,78 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --background-color-light: #ffffff55;
+  --background-color-dark: #00000098;
+  --filter-light: grayscale(100%);
+  --filter-dark: none;
+  --specular-color-light: #2b2b2b88;  /* Black for light theme */
+  --specular-color-dark: #c11d1d6b;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  
+  /* -- General Colors -- */
+  --primary-color: #3b82f6;        /* Deep muted blue */
+  --secondary-color: #a0a0a0;      /* Soft neutral gray */
+  --background-color: #0a0a0a;     /* True deep black */
+  --foreground-color: #f5f5f5;     /* Soft white for readability */
+  --muted-text-color: #95a5a6;     /* Softer muted text */
+  --border-color: #2a2a2a;         /* Subtle dark gray border */
+  --shadow-color: rgba(0, 0, 0, 0.4); /* Deeper shadow for depth */
+
+  /* -- UI Components -- */
+  --header-bg: #121212;            /* Deep black header */
+  --nav-bg: #181818;               /* Rich black navigation */
+  --card-bg: #1a1a1a;              /* Slightly lifted black for depth */
+  --modal-bg: #1e1e1e;             /* Dark but distinct modal */
+  --button-bg: #3b82f6;            /* Refined deep blue */
+  --button-text-color: #ffffff;     /* Crisp white text */
+  --button-hover-bg: #2563eb;      /* Slightly deeper blue on hover */
+
+  /* -- Form Elements -- */
+  --input-bg: #222;                /* Dark input field */
+  --input-border: #2f2f2f;         /* Subtle structured border */
+  --input-text: #ffffff;           /* Clean white text */
+  --input-placeholder: #757575;    /* Understated gray placeholder */
+
+
+  /* -- Status Colors -- */
+  --success-color: #27ae60;        /* Soft green */
+  --error-color: #c0392b;          /* Muted red */
+  --warning-color: #f39c12;        /* Warm orange */
+  --info-color: #2980b9;           /* Soft blue */
+
+
+  /* -- Typography -- */
+  --font-family: 'Inter', sans-serif;
+  --primary-font-family: Anta;
+  --font-size: 16px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  
+  /* -- Spacing & Layout -- */
+  --xxs: clamp(0.1rem, 0.3vw, 0.2rem);
+  --xs: clamp(0.2rem, 0.6vw, 0.4rem);
+  --sm: clamp(0.4rem, 1vw, 0.7rem);
+  --md: clamp(0.9rem, 1.8vw, 1.2rem);
+  --lg: clamp(1rem, 2.5vw, 1.3rem);
+  --xl: clamp(1.25rem, 3vw, 1.75rem);
+  --xxl: clamp(1.5rem, 4vw, 2.25rem);
+
+
+
+  /* -- Borders & Radius -- */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+
+  /* -- Box Shadows -- */
+  --box-shadow-sm: 0rem 0.125rem 0.25rem var(--shadow-color);
+  --box-shadow-md: 0rem 0.25rem 0.5rem var(--shadow-color);
+  --box-shadow-lg: 0rem 0.5rem 1rem var(--shadow-color);
 }
+
+
 
 html,
 body {
@@ -17,8 +81,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--foreground-color);
+  background: var(--background-color);
   font-family:  Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,12 +99,28 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+
+body {
+  background-image: url('/noise.svg');
+  background-repeat: repeat;
+  background-blend-mode:soft-light;
+  background-attachment: fixed;
+  animation: movebackground 300s linear infinite;
+   /* Optional: make it cover the whole viewport */
 }
 
-/* h1{
-  font-family: Anta;
-} */
+
+
+
+@keyframes movebackground{
+  0%{
+    background-position: 0% 50%;
+    
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}

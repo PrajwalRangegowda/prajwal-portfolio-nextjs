@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
 import styles from "./Footer.module.css";
-import github from "../public/github.svg";
+
+
 export default function Footer() {
   const date = new Date();
   const year = date.getFullYear();
@@ -10,6 +10,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.copyright}>
         <a href={"/"}> <span className={styles.copysymbol}>&copy;</span> {year} Prajwal Rangegowda</a>
+        <p>All Rights Reserved.</p>
       </div>
       <div  className={styles.links}>
         {/* //Github */}

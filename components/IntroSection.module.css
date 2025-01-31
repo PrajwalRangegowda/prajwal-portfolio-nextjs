@@ -1,0 +1,81 @@
+.appearAnimation {
+  font-family: var(--font-family);
+  text-align: center;
+  padding: var(--xl) var(--md);
+}
+
+.introContent h1 {
+  font-size: var(--xxl);
+  font-weight: var(--font-weight-bold);
+  color: var(--foreground-color);
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.role {
+  font-size: var(--xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--secondary-color);
+}
+
+.description {
+  font-size: var(--lg);
+  max-width: 600px;
+  margin: var(--sm) auto;
+  color: var(--muted-text-color);
+}
+
+.skills {
+  margin-top: var(--lg);
+  font-family: var(--primary-font-family);
+  font-weight: var(--font-weight-normal);
+}
+
+.skills h3 {
+  font-size: var(--xl);
+  color: var(--foreground-color);
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  font-size: var(--md);
+  margin: var(--xs) 0;
+  opacity: 0; /* Hidden initially */
+}
+
+.cta {
+  margin-top: var(--md);
+}
+
+.button {
+  padding: var(--sm) var(--md);
+  background: var(--button-bg);
+  color: var(--button-text-color);
+  border-radius: var(--border-radius-md);
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+  margin-right: var(--xs);
+  display: inline-block;
+  transition: transform 0.1s ease-in-out;
+}
+
+.button:hover {
+  background: var(--button-hover-bg);
+}
+
+.outlineButton {
+  padding: var(--sm) var(--md);
+  border: var(--xxs) solid var(--button-bg);
+  color: var(--button-text-color);
+  border-radius: var(--border-radius-md);
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+  display: inline-block;
+  transition: transform 0.1s ease-in-out;
+}
