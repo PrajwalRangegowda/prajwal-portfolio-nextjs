@@ -4,9 +4,6 @@ import "./globals.css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-import styles from "./layout.module.css";
-import Image from "next/image";
-import Link from "next/link";
 
 
 const geistSans = Geist({
